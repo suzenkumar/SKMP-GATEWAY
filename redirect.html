@@ -1,0 +1,42 @@
+b<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;https://www.dropbox.com/home">
+    <title>Redirecting To Database...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="image.webp">
+
+    <div class="container">
+	 <p style="color:white;font-size:70px;">This page is redirecting you to data base. <div id="timer"style="color:white;font-size:70px;">5</div>.</p>
+	
+
+<script>
+// Function to start the timer
+function startTimer(duration, display) {
+    var timer = duration, seconds;
+    setInterval(function () {
+        seconds = parseInt(timer % 60, 10);
+
+        // Display the remaining time in the HTML element
+        display.textContent = seconds;
+
+        // If timer reaches 0, stop the timer
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000); // Timer will update every second
+}
+
+// When the page loads
+window.onload = function () {
+    var fiveSeconds = 5, // Set the duration to 5 seconds
+        display = document.querySelector('#timer');
+    startTimer(fiveSeconds, display);
+};
+</script>
+       
+    </div>
+</body>
+</html>

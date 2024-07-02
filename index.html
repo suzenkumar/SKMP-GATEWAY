@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome To Skmp Infotech Technologies Admin Pannel. We Provide Good Service To Customer Services Like (Webdevelopment, App Development without Code In Very Low Price). Our Skmp Infotech Technologies Is established by SKMP GROUP Founder Mr. Suzen Kumar Mohanty In The Year 2016">
+    <meta name="keywords" content="Web development,Frontend development,Responsive web design,Website optimization,Mobile app development,portfolio website design,web developer company,web development companies,website developer company">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="https://ztt5gka8l2xnvbzqt6m73a.on.drv.tw/ALL%20SKMP%20WEBSITES/SKMP%20COMPANY%20PVT%20LTD%20OFFICIAL%20WEBPAGE/skmp%20company%20official%20website">
+    <link rel="icon" href="image/app.png">
+    <link rel="stylesheet" href="style/style.css">
+    <title>ADMIN DASHBOARD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #countdown {
+            font-size: 2em;
+            float: right;
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            margin: 10px;
+        }
+        p {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="image/app icon.png" width="116" height="87" alt="skmplogo" style="margin-left: 18px; margin-top: 1px; float: left; margin-bottom: 10px;">
+    <img src="image/SKMP INFOTECH NEW LOGO.jpg" width="116" height="87" alt="skmplogo" style="margin-left: 18px; margin-top: 1px; float: right; margin-bottom: 10px;">
+    <h1 style="text-align: center; margin-right: 16px;">SKMP SERVER GATEWAY SERVICE </h1>
+    <p style="text-align: center; font-weight: bold; color: black; padding-bottom: 12px; margin-right: 16px;">Welcome To Admin and Authorised person</p>
+</header>
+<section>
+    <nav>
+        <table id="menu_bar" align="center">
+            <tr>
+                <td id="menu_item"><a href="#">Home</a></td>
+                <td id="menu_item"><a href="dashboard.html">Books</a></td>
+                <td id="menu_item"><a href="contact.html">Contact Us</a></td>
+                <td id="menu_item"><a href="redirectcustomer.html">Skmp Client Database Sheet</a></td>
+                <td id="menu_item"><a href="redirect.html">Database</a></td>
+            </tr>
+        </table>
+        <marquee behavior="" bgcolor="orange">OUR DEPARTMENTS =||SKMP INFOTECH TECHNOLOGIES || SKMP WEBDEVLOPMENT||SKMP PROJECT MANAGEMENT||SKMP ARTS ACADEMY||</marquee>
+    </nav>
+    <br><br>
+    <div id="background">
+        <div id="admin">
+            <u><h1 id="instruction">INSTRUCTION FOR ADMIN</h1></u>
+            <p id="instruction_id">• Only Authorise Person Are Allowed To Access The Database.</p>
+            <p id="instruction_id">• If You Face Problem During Login Then Contact Our Skmp Head Office/District Office/Skmp Helpline Number And Email Id.</p>
+            <p id="instruction_id">• The Portal Only Works On Working Days Monday To Saturday. When Timer Ends Then You Cannot Access Database So Be Careful.</p>
+            <p id="instruction_id"></p>
+            <p id="instruction_id">
+                <div id="countdown"></div>
+                <p id="instruction_id">THE DATABASE CLOSES IN:
+                    <script>
+                        function checkAccessTime() {
+                            var now = new Date();
+                            var currentDay = now.getDay(); // 0 (Sunday) to 6 (Saturday)
+                            var currentHour = now.getHours();
+                            var currentMinute = now.getMinutes();
+
+                            // Check if current time is within 7 AM and 5 PM AND it's a Monday to Saturday
+                            if (currentDay >= 1 && currentDay <= 6 && currentHour >= 7 && currentHour < 17) {
+                                var closingTime = new Date();
+                                closingTime.setHours(17, 0, 0, 0); // Set closing time to 5 PM today
+
+                                var distance = closingTime - now;
+
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+                                if (distance <= 0) {
+                                    clearInterval(x);
+                                    document.getElementById("countdown").innerHTML = "SESSION EXPIRED";
+                                    document.body.innerHTML = "<h1>SESSION EXPIRED !!!</h1><p>Access is not available at this time. Admin can access the website only on working days MONDAY to SATURDAY 7am to 5pm.</p>";
+                                }
+                            } else {
+                                // If current time is outside the specified range or it's Sunday, show "DATABASE CLOSED"
+                                clearInterval(x);
+                                document.getElementById("countdown").innerHTML = "DATABASE CLOSED";
+                                document.body.innerHTML = "<h1>DATABASE CLOSED!!!</h1><p>Access is not available at this time. Admin can access the website only on working days MONDAY to SATURDAY 7am to 5pm.</p>";
+                            }
+                        }
+
+                        var x = setInterval(checkAccessTime, 1000);
+                    </script>
+                </p>
+            </p>
+        </div>
+
+        <div id="box4">
+            <fieldset>
+                <legend><h4 style="color: black">PUBLIC NOTICE</h4></legend>
+                <div class="container">
+                    <marquee scrollamount="4" direction="up" height="267" onMouseOver="this.stop()" onMouseOut="this.start()">
+                        <p>
+                            <font color='black'>
+                                		<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/GANESH PUJA 2023.jpg" target="_blank"
+								style="color: black; text-decoration: none;font-size: 15px;">NOTICE FOR GANESH PUJA 2023</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/GANESH PUJA  CARD2023.jpg" target="_blank"
+								style="color: red; text-decoration: none;font-size: 15px;">GANESH PUJA INVITATAION CARD </a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/basic computer certificate_.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">STP COMPUTER EDUCATION CERTIFICTE</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/stp computer certificate.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">STP COMPUTER EDUCATION CERTIFICATE</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/INTERPRENSERSHIP CERIFICATE.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">CERTIFICATE OF INTERNSHIP</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/HAPPY SWARASWATI PUJA 2023.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SWARASWATI PUJA 2023</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP OLD TEMPLET.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP OLD TEMPLET</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP HAPPY REPUBLIC DAY 2023.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">INDEPENDANCE DAY </a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/GANESH PUJA  CARD2023.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">GANESH PUJA CARD 2023</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP RATHAYATRA 2023.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">RATHA YATRA 2023 NOTICE</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/GANESH PUJA  CARD2023.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">GANESH PUJA CARD 2023 INSIDE VIEW </a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP PC 1.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP PC 1 FULL INFORMATION </a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP PC 2.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP PC 2 FULL INFORMATION</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP PC 3.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP PC 3 FULL INFORMATION</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP TELL ME ABOUT YOURSELF GUIDE.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP TELL ME ABOUT YOURSELF NOTICE</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP HAPPY ENGINEERS DAY.jpeg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP HAPPY ENGINEERS DAY 2024</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP HAPPY JANMASTAMI.jpeg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP HAPPY JANMASHTAMI NOTICE 2023</a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/HAPPY DISCO NIGHT NOTICE 2023.jpeg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP DISCO NIGHT 2023 NOTICE FOR GANESH PUJA FAREWELL</a><br>
+
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP HAPPY DIWALI NOTICE.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP HAPPY DIWALI NOTICE 2023</a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP HAPPY DHANTIRAS 2023.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP HAPPY DHANTERAS 2023</a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP CEO.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP GROUP FOUNDER HAPPY BIRTH DAY 2023</a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SUBNIT BIRTHDAY 2023.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SUBNIT MOHANTY HAPPY BIRTHDAY 2023 </a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/HAPPY MAKAR SANKRANTI 2024.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;"> HAPPY MAKAR SANKRANTI 2024</a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/happy new year.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;"> HAPPY NEW YEAR 2024 NOTICE </a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/img-9.jpg" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">  REPUBLIC DAY CERTIFICATE </a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SKMP SWARASWATI PJA 2024 TIME TABLE.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;"> HAPPY SWARASWATI PUJA 2024 SCHEDULE NOTICE</a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/SMP HAPPY SWARASWATI PUJA NOTICE.jpg" target="_blank" style="color: BLACK; text-decoration: none;font-size: 15px;"> SKMP SWARASWATI PUJA 2024 NOTICE.</a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/happy shivaratri.jpg" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP HAPPY MAHA SHIVARATRI NOTICE</a><br>
+
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/HAPPY MAHABISUVA SANKRANTI_page-0001.JPG" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP HAPPY PANA SANKRANTI NOTICE 2024 </a><br>
+
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/RAM NABAMI.JPG" target="_blank" style="color: red; text-decoration: none;font-size: 15px;">SKMP HAPPY RAM NABAMI NOTICE 2024 </a><br>
+							
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/skmpheatwave.JPG" target="_blank" style="color: black; text-decoration: none;font-size: 15px;">SKMP HEATWAVE ADVISORY 2024 </a><br>
+							<span class="badge badge-primary" style="background-color: #f70505;color:#fff; text-decoration: none;font-size: 12px;">NEW</span> <a href="imag/raja_page-0001.jpg" target="_blank" style="color:  red; text-decoration: none;font-size: 15px;">HAPPY RAJA 2024 </a><br>
+								</div>
+
+                                <!-- Additional notices here -->
+                            </font>
+                        </p>
+                    </marquee>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <marquee behavior="" bgcolor="orange">OUR DEPARTMENTS = ||SKMP INFOTECH TECHNOLOGIES || SKMP WEBDEVLOPMENT||SKMP PROJECT MANAGEMENT||SKMP ARTS ACADEMY||</marquee>
+</section>
+<footer>
+    COPYRIGHT©;2024 SKMP SERVER GATEWAY ALL RIGHTS RESERVED WITH &hearts; BY SUZEN KUMAR MOHANTY|LAST UPDATED IN 25/06/2024|TIME=8.00am
+</footer>
+</body>
+</html>

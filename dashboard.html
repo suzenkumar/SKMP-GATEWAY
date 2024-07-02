@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Read and download our collection of PDF books.">
+    <meta name="keywords" content="PDF books, download, read">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Your Company Name">
+    <title>Reading PDF Books - Skmp Infotech Foundation India</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/book-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .hero {
+            background: url('images/backgroud.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1, .hero p {
+            margin: 0 0 20px;
+        }
+        .pdf-list {
+            padding: 20px;
+        }
+        .pdf-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #1f1f1f;
+            border: 1px solid #333;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pdf-item h5 {
+            margin: 0;
+        }
+        .pdf-item a {
+            margin-left: 10px;
+        }
+        .btn-primary {
+            background-color: #28a745; /* Green color for "Read" button */
+            border-color: #28a745;
+        }
+        .btn-secondary {
+            background-color: #dc3545; /* Red color for "Download" button */
+            border-color: #dc3545;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Skmp Foundation Free Reading Book Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Free Reading PDF Books</h1>
+            <p class="animate__animated animate__fadeInDown">Explore our collection of informative PDF books on various topics.</p>
+        </div>
+    </div>
+</header>
+
+<main class="container my-5">
+    <h2 class="text-center mb-4">Available Books</h2>
+    <div class="pdf-list">
+        <div class="pdf-item">
+            <h5>HIDE-AND-SEEK-Free-Childrens-Book-By-Monkey-Pen</h5>
+            <div>
+                <a href="BOOK/001-HIDE-AND-SEEK-Free-Childrens-Book-By-Monkey-Pen.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/001-HIDE-AND-SEEK-Free-Childrens-Book-By-Monkey-Pen.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>GINGER-THE-GIRAFFE-Free-Childrens-Book-By-Monkey-Pen</h5>
+            <div>
+                <a href="BOOK/002-GINGER-THE-GIRAFFE-Free-Childrens-Book-By-Monkey-Pen.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/002-GINGER-THE-GIRAFFE-Free-Childrens-Book-By-Monkey-Pen.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen</h5>
+            <div>
+                <a href="BOOK/005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>CCC BOOK IN HINDI</h5>
+            <div>
+                <a href="BOOK/CCC BOOK IN HINDI.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/CCC BOOK IN HINDI.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>CCC BOOK IN ENGLISH</h5>
+            <div>
+                <a href="BOOK/CCC BOOK.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/CCC BOOK.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>COMPUTER HARDWARE GUIDE</h5>
+            <div>
+                <a href="BOOK/COMPUTER HARDWARE GUIDE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/COMPUTER HARDWARE GUIDE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>FRONT END DEVELOPER BOOK</h5>
+            <div>
+                <a href="BOOK/FRONT END DEVELOPER BOOK.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/FRONT END DEVELOPER BOOK.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>>GK BOOK 2024</h5>
+            <div>
+                <a href="BOOK/GK BOOK 2024.pdff" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/GK BOOK 2024.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>GK BOOK</h5>
+            <div>
+                <a href="BOOK/GK BOOK.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/GK BOOK.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>HARDWARE BOOk</h5>
+            <div>
+                <a href="BOOK/HARDWARE BOOK.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/HARDWARE BOOK.pdff" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>LEARN ENGLISH BOOK 1</h5>
+            <div>
+                <a href="BOOK/LEARN ENGLISH BOOK 2.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/LEARN ENGLISH BOOK 2.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>LEARN ENGLISH BOOK 2</h5>
+            <div>
+                <a href="BOOK/LEARN ENGLISH.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/LEARN ENGLISH.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>LET US C</h5>
+            <div>
+                <a href="BOOK/LET US C.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/LET US C.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>PHP BOOK</h5>
+            <div>
+                <a href="BOOK/PHP NOTES.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/PHP NOTES.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>SKMP TEMPLET 2024</h5>
+            <div>
+                <a href="BOOK/SKMP TEMPLET 2024.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/SKMP TEMPLET 2024.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>SPOKEN ENGLISH  BOOK</h5>
+            <div>
+                <a href="BOOK/SPOKEN ENLISH SONG.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/SPOKEN ENLISH SONG.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>TELL ME  ABOUT YOURSELF  SKMP INTERVIEW GUIDE NOTICE</h5>
+            <div>
+                <a href="BOOK/TELL ME  ABOUT YOURSELF  SKMP INTERVIEW GUIDE NOTICE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/TELL ME  ABOUT YOURSELF  SKMP INTERVIEW GUIDE NOTICE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>WEB TECHNOLOGIES LAB</h5>
+            <div>
+                <a href="BOOK/WEB TECHNOLOGIES LAB.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/WEB TECHNOLOGIES LAB.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>LET US PYTHON</h5>
+            <div>
+                <a href="BOOK/LET US  PYTHON.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/LET US  PYTHON.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>LET US JAVA</h5>
+            <div>
+                <a href="BOOK/LET US JAVA.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/LET US JAVA.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>TABLE MAKING PROJECT CODE CSE BRANCH</h5>
+            <div>
+                <a href="BOOK/stp compuer education table making.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/stp compuer education table making.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>HTML PROJECT 1 CODE CSE BRANCH</h5>
+            <div>
+                <a href="BOOK/STP COMPUTER EDUCATION  HTML PROJECT 1.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/STP COMPUTER EDUCATION  HTML PROJECT 1.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>HTML PROJECT 2 CODE CSE BRANCH </h5>
+            <div>
+                <a href="BOOK/STP  COMPUTER EDUCATION HTML PROJECT 2 CODE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK/STP  COMPUTER EDUCATION HTML PROJECT 2 CODE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>CODE PRATICE 2</h5>
+            <div>
+                <a href="BOOKS 2/CHAPTER 4 NOTES CODE PRATICE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/CHAPTER 4 NOTES CODE PRATICE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>CSS 2 TASK BOX MAKING</h5>
+            <div>
+                <a href="BOOKS 2/CSS 2 TASK BOX MAKING.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/CSS 2 TASK BOX MAKING.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5> HTML PROJECT 2  SOURCE CODE</h5>
+            <div>
+                <a href="BOOKS 2/STP  COMPUTER EDUCATION HTML PROJECT 2 CODE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP  COMPUTER EDUCATION HTML PROJECT 2 CODE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5> STP COMPUTER EDUCATION TABLE MAKING</h5>
+            <div>
+                <a href="BOOKS 2/stp compuer education table making.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/stp compuer education table making.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>STP COMPUTER EDUCATION  HTML PROJECT 1.</h5>
+            <div>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION  HTML PROJECT 1.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION  HTML PROJECT 1.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>STP COMPUTER EDUCATION BULET INSERT TAG</h5>
+            <div>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION BULET INSERT TAG.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION BULET INSERT TAG.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>STP COMPUTER EDUCATION  HTML  SOURCE CODE</h5>
+            <div>
+                <a href="BOOKS 2/stp computer education html task.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/stp computer education html task.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>STP COMPUTER EDUCATION MULTIMEDIA PLUG IN CODE</h5>
+            <div>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION MULTIMEDIA PLUG IN CODE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION MULTIMEDIA PLUG IN CODE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>STP COMPUTER EDUCATION PROJECT 3 SOURCE CODE</h5>
+            <div>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION PROJECT 3 SOURCE CODE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION PROJECT 3 SOURCE CODE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>STP COMPUTER EDUCATION STUDENT REGISTRATION FORM CODE</h5>
+            <div>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION STUDENT REGISTRATION FORM CODE.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP COMPUTER EDUCATION STUDENT REGISTRATION FORM CODE.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+		  <div class="pdf-item">
+            <h5>STP TASK MAKING BOX USING DEV ELEMENT</h5>
+            <div>
+                <a href="BOOKS 2/STP TASK MAKING BOX USING DEV ELEMENT.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/STP TASK MAKING BOX USING DEV ELEMENT.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen</h5>
+            <div>
+                <a href="BOOKS 2/005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen (1).pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOKS 2/005-SUNNY-MEADOWS-WOODLAND-SCHOOL-Free-Childrens-Book-By-Monkey-Pen (1).pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python projects with source code</h5>
+            <div>
+                <a href="BOOK3/71 Python projects with source code -25.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/71 Python projects with source code -25.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Basic of SQL</h5>
+            <div>
+                <a href="BOOK3/Basic of SQL.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Basic of SQL.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>CSS - Notes.pdf</h5>
+            <div>
+                <a href="BOOK3/CSS - Notes.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/CSS - Notes.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Data Structure Handwritten Notes</h5>
+            <div>
+                <a href="BOOK3/Data Structure Handwritten Notes ❣️.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Data Structure Handwritten Notes ❣️.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Handwritten Java Interview Questions and Answers.pdf</h5>
+            <div>
+                <a href="BOOK3/Handwritten Java Interview Questions and Answers.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Handwritten Java Interview Questions and Answers.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Handwritten JavaScript Notes .pdf</h5>
+            <div>
+                <a href="BOOK3/Handwritten JavaScript Notes .pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Handwritten JavaScript Notes .pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>HTML - Notes.pdf</h5>
+            <div>
+                <a href="BOOK3/HTML - Notes.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/HTML - Notes.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>HTML Handwritten Notes .pdf</h5>
+            <div>
+                <a href="BOOK3/HTML Handwritten Notes .pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/HTML Handwritten Notes .pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Java Complete Notes💡.pdf</h5>
+            <div>
+                <a href="BOOK3/Java Complete Notes💡.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Java Complete Notes💡.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Java Handwritten Notes -2.pdf</h5>
+            <div>
+                <a href="BOOK3/Java Handwritten Notes -2.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Java Handwritten Notes -2.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>JavaScript - Notes.pdf</h5>
+            <div>
+                <a href="BOOK3/JavaScript - Notes.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/JavaScript - Notes.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Machine Learning 💡.pdf</h5>
+            <div>
+                <a href="BOOK3/Machine Learning 💡.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Machine Learning 💡.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>OOPS concept in Java .pdf<h5>
+            <div>
+                <a href="BOOK3/OOPS concept in Java .pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/OOPS concept in Java .pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>OOPS-NOTES-4</h5>
+            <div>
+                <a href="BOOK3/OOPS Notes-4.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/OOPS Notes-4.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Handwritten Interview Questions </h5>
+            <div>
+                <a href="BOOK3/Python Handwritten Interview Questions (1).pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Handwritten Interview Questions (1).pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Handwritten Interview Questions.pdf</h5>
+            <div>
+                <a href="BOOK3/Python Handwritten Interview Questions.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Handwritten Interview Questions.pdf-" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Handwritten Notes . . .pdf</h5>
+            <div>
+                <a href="BOOK3/Python Handwritten Notes . . .pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Handwritten Notes . . .pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Handwritten notes.pdf</h5>
+            <div>
+                <a href="BOOK3/Python Handwritten notes.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Handwritten notes.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Interview Questions and Answers 📘.pdf</h5>
+            <div>
+                <a href="BOOK3/Python Interview Questions and Answers 📘.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Interview Questions and Answers 📘.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Machine Learning .pdf</h5>
+            <div>
+                <a href="BOOK3/Python Machine Learning .pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Machine Learning .pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>Python Tutorials For Beginners🧑_💻📢.pdf</h5>
+            <div>
+                <a href="BOOK3/Python Tutorials For Beginners🧑_💻📢.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/Python Tutorials For Beginners🧑_💻📢.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>SQL Handwritten Notes (1).pdf</h5>
+            <div>
+                <a href="BOOK3/SQL Handwritten Notes (1).pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/SQL Handwritten Notes (1).pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>sql Handwritten notes -1.pdf</h5>
+            <div>
+                <a href="BOOK3/sql Handwritten notes -1.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/sql Handwritten notes -1.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>SQL Interview Questions ✴️.pdf</h5>
+            <div>
+                <a href="BOOK3/SQL Interview Questions ✴️.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/SQL Interview Questions ✴️.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>OOPs Interview Questions</h5>
+            <div>
+                <a href="BOOK3/5_6316820388928032399.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/5_6316820388928032399.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>🔹Oops in c++🔹 INTERVIEW ◼️SERIES -2 .pdf</h5>
+            <div>
+                <a href="BOOK3/🔹Oops in c++🔹 INTERVIEW ◼️SERIES -2 .pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/🔹Oops in c++🔹 INTERVIEW ◼️SERIES -2 .pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+        <div class="pdf-item">
+            <h5>API Reference</h5>
+            <div>
+                <a href="BOOK3/API Reference.pdf" class="btn btn-primary" target="_blank">Read</a>
+                <a href="BOOK3/API Reference.pdf" class="btn btn-secondary" download>Download</a>
+            </div>
+        </div>
+       
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Skmp Infotech Foundation India. All rights reserved with &hearts; by Suzen Kumar Mohanty.Last update on 22.Jun.2024|Time=8.00pm|</p>
+    <div class="social-links mt-3">
+        <a href="https://www.facebook.com/profile.php?id=61557625342116&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/suzen43282" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/suzen-kumar-mohanty-4064b824a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/suzen_mohanty_official?igsh=aTg3bjdmZWZjajds" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
